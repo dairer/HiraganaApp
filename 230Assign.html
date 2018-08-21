@@ -1,0 +1,2262 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<title>Hiragana app</title>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script>
+
+	
+	$(document).ready(function(){
+    $("#show").click(function(){
+        $(".quiz1").toggle();
+		$(".quiz2").hide();
+		$(".quiz3").hide();
+		$(".quiz4").hide();
+		$(".quiz5").hide();
+		$("body").scrollTop(0);
+    });
+});
+
+	$(document).ready(function(){
+    $("#show2").click(function(){
+		$(".quiz1").hide();
+        $(".quiz2").toggle();	
+		$(".quiz3").hide();
+		$(".quiz4").hide();
+		$(".quiz5").hide();
+		$("body").scrollTop(0);
+
+    });
+});
+
+	$(document).ready(function(){
+    $("#show3").click(function(){
+        $(".quiz3").toggle();
+		$(".quiz1").hide();
+		$(".quiz2").hide();
+		$(".quiz5").hide();
+		$(".quiz4").hide();
+		$("body").scrollTop(0);
+    });
+});
+
+	$(document).ready(function(){
+    $("#show4").click(function(){
+        $(".quiz4").toggle();
+		$(".quiz1").hide();
+		$(".quiz2").hide();
+		$(".quiz3").hide();
+		$(".quiz5").hide();
+		$("body").scrollTop(0);
+    });
+});
+
+	$(document).ready(function(){
+    $("#show5").click(function(){
+        $(".quiz5").toggle();
+		$(".quiz1").hide();
+		$(".quiz2").hide();
+		$(".quiz3").hide();
+		$(".quiz4").hide();
+		$("body").scrollTop(0);
+    });
+});
+	</script>
+    </head>
+
+    <body bgcolor="#E1E1E1">
+	<h1 align="center">Learn Hiragana</h1>
+	<hr align="center" width="50%">
+	<hr align="center" width="75%">
+
+
+	
+	
+<!--Quiz1-->
+<div class="quiz1" style = "display: none;">
+
+<h1 class="quizHeader">Hiragana quiz</h1>
+<p class="quizSubHeader">Training Set 1</p>
+ 	<hr align="center" width="50%">
+	<hr align="center" width="75%">
+ <br>
+ 
+  <p style="font-family:'Times New Roman', Times, serif;font-weight:normal;font-size:25px;text-align:center;">For each question below select either the corresponding kana element or romaji equivalent to the character provided</p>
+   	<br>
+	<hr align="center" width="75%">
+	<hr align="center" width="50%">
+	<br>
+	<br>
+  
+	<table style="width:100%">
+	<tr>
+	  <td>
+	  	<div style="text-align:center;">
+	  		<p class="question"><b>Question 1.</b></p>
+			<img class="questionNew" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Japanese_Hiragana_kyokashotai_A.svg/500px-Japanese_Hiragana_kyokashotai_A.svg.png" width="100" height="100">
+			
+	    	<ul>
+	    	<input class="answer" type="radio" name="q1" value="1">
+	        <label id="correctString1"><b>a</b></label>
+	    	<br>
+	        <input class="answer" type="radio" name="q1" value="0">
+	        <label><b>ma</b></label>
+	        <br>
+	        <input class="answer" type="radio" name="q1" value="0">
+	        <label><b>yu</b></label>
+	        <br>
+	        <input class="answer" type="radio" name="q1" value="0">
+	        <label><b>e</b></label>
+    		</ul>
+	  	</div>
+	  </td>
+	  <td>
+	  	<div style="text-align:center;">
+	  		<p class="question"><b>Question 2.</b></p>
+			<img class="questionNew" src="https://maxcdn.icons8.com/wp-content/uploads/2014/02/e_lowercase-128.png" width="100" height="100">
+	    	<ul>
+	        <input class="answer" type="radio" name="q2" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Japanese_Hiragana_kyokashotai_O.png" width="20" height="20"></label> 
+	        <br>
+	        <input class="answer" type="radio" name="q2" value="1">
+	        <label id="correctString2"><img src="https://upload.wikimedia.org/wikipedia/commons/b/be/Japanese_Hiragana_kyokashotai_E.png" width="20" height="20"></label>
+	        <br>
+	        <input class="answer" type="radio" name="q2" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Japanese_Hiragana_kyokashotai_KA.svg/500px-Japanese_Hiragana_kyokashotai_KA.svg.png" width="20" height="20"></label>
+	        <br>
+	        <input class="answer" type="radio" name="q2" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Japanese_Hiragana_kyokashotai_KE.png" width="20" height="20"></label>
+	    	</ul>
+
+	  	</div>
+	  </td>
+	  	  <td>
+	  	<div style="text-align:center;">
+	  		<p class="question"><b>Question 3.</b></p>
+			<img class="questionNew" src="https://maxcdn.icons8.com/wp-content/uploads/2014/02/k_lowercase-128.png" width="100" height="100"><img  class="questionNew" id="png2" src="https://maxcdn.icons8.com/wp-content/uploads/2014/02/u_lowercase-128.png" width="100" height="100">
+			
+	    	<ul>
+	        <input class="answer" type="radio" name="q3" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Japanese_Hiragana_kyokashotai_O.png" width="20" height="20"></label>
+	        <br>
+	        <input class="answer" type="radio" name="q3" value="1">
+	        <label id="correctString3"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Japanese_Hiragana_kyokashotai_KU.svg/500px-Japanese_Hiragana_kyokashotai_KU.svg.png" width="20" height="20"></label>
+	        <br>
+	        <input class="answer" type="radio" name="q3" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Japanese_Hiragana_kyokashotai_KE.png" width="20" height="20"></label>
+	        <br>
+	        <input class="answer" type="radio" name="q3" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Japanese_Hiragana_kyokashotai_KO.png" width="20" height="20"></label>
+	    	</ul>
+
+
+	  	</div>
+	  </td>
+	  	  <td>
+	  	<div style="text-align:center;">
+	  		<p class="question"><b>Question 4.</b></p>
+			<img class="questionNew" src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Japanese_Hiragana_kyokashotai_O.png" width="100" height="100">
+			
+	    	<ul>
+	        <input class="answer" type="radio" name="q4" value="0">
+	        <label><b>a</b></label>
+	        <br>
+	        <input class="answer" type="radio" name="q4" value="0">
+	        <label><b>ko</b></label>
+	        <br>
+	        <input class="answer" type="radio" name="q4" value="0">
+	        <label><b>ki</b></label>
+	        <br>
+	        <input class="answer" type="radio" name="q4" value="1">
+	        <label  id="correctString4"><b>o</b></label>
+    		</ul>
+
+
+	  	</div>
+	  </td>
+	  	  <td>
+	  	<div style="text-align:center;">
+	  		<p class="question"><b>Question 5.</b></p>
+			<img class="questionNew" src="https://maxcdn.icons8.com/wp-content/uploads/2014/02/k_lowercase-128.png" width="100" height="100">
+			<img class="questionNew" id="png2" src="https://maxcdn.icons8.com/wp-content/uploads/2014/02/o_lowercase-128.png" width="100" height="100">
+	    	<ul>
+	    	<input class="answer" type="radio" name="q5" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Japanese_Hiragana_kyokashotai_SE.svg/500px-Japanese_Hiragana_kyokashotai_SE.svg.png" width="20" height="20"></label>
+	    	<br>
+	        <input class="answer" type="radio" name="q5" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Japanese_Hiragana_kyokashotai_TE.png" width="20" height="20"></label>
+	        <br>
+	        <input class="answer" type="radio" name="q5" value="1">
+	        <label id="correctString5"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Japanese_Hiragana_kyokashotai_KO.png" width="20" height="20"></label>
+	        <br>
+	        <input class="answer" type="radio" name="q5" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/3/37/Japanese_Hiragana_kyokashotai_NI.png" width="20" height="20"></label>
+    		</ul>
+	  	</div>
+	  </td>
+	</tr>
+	<tr>
+	<td>
+	  	<div style="text-align:center;">
+	  		<p class="question"><b>Question 6.</b></p>
+			<img class="questionNew" src="https://maxcdn.icons8.com/wp-content/uploads/2014/02/k_lowercase-128.png" width="100" height="100"><img class="questionNew" id="png2" src="https://maxcdn.icons8.com/wp-content/uploads/2014/02/i_lowercase-128.png" width="100" height="100">
+			
+			
+	    	<ul>
+	    	<input class="answer" type="radio" name="q6" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Japanese_Hiragana_kyokashotai_KO.png" width="20" height="20"></label>
+	    	<br>
+	        <input class="answer" type="radio" name="q6" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Japanese_Hiragana_kyokashotai_NA.png" width="20" height="20"></label>
+	        <br>
+	        <input class="answer" type="radio" name="q6" value="1">
+	        <label  id="correctString6"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Japanese_Hiragana_kyokashotai_KI.svg/500px-Japanese_Hiragana_kyokashotai_KI.svg.png" width="20" height="20"></label>
+	        <br>
+	        <input class="answer" type="radio" name="q6" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Japanese_Hiragana_kyokashotai_TU.png" width="20" height="20"></label>
+    		</ul>
+	  	</div>
+	  </td>
+	  <td>
+	  	<div style="text-align:center;">
+	  		<p class="question"><b>Question 7.</b></p>
+			<img class="questionNew" src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Japanese_Hiragana_kyokashotai_KE.png" width="100" height="100">
+			
+	    	<ul>
+	    	<input class="answer" type="radio" name="q7" value="1">
+	        <label id="correctString7"><b>ke</b></label>
+	    	<br>
+	        <input class="answer" type="radio" name="q7" value="0">
+	        <label><b>i</b></label>
+	        <br>
+	        <input class="answer" type="radio" name="q7" value="0">
+	        <label><b>ko</b></label>
+	        <br>
+	        <input class="answer" type="radio" name="q7" value="0">
+	        <label><b>e</b></label>
+    		</ul>
+	  	</div>
+	  </td>
+	  <td>
+	  	<div style="text-align:center;">
+	  		<p class="question"><b>Question 8.</b></p>
+			<img class="questionNew" src="https://upload.wikimedia.org/wikipedia/commons/9/90/Japanese_Hiragana_kyokashotai_U.png" width="100" height="100">
+			
+	    	<ul>
+	    	<input class="answer" type="radio" name="q8" value="0">
+	        <label><b>ko</b></label>
+	    	<br>
+	        <input class="answer" type="radio" name="q8" value="0">
+	        <label><b>a</b></label>
+	        <br>
+	        <input class="answer" type="radio" name="q8" value="0">
+	        <label><b>o</b></label>
+	        <br>
+	        <input class="answer" type="radio" name="q8" value="1">
+	        <label  id="correctString8"><b>u</b></label>
+    		</ul>
+	  	</div>
+	  </td>
+	  
+	  <td>
+	  	<div style="text-align:center;">
+	  		<p class="question"><b>Question 9.</b></p>
+			<img class="questionNew" src="https://maxcdn.icons8.com/wp-content/uploads/2014/02/i_lowercase-128.png" width="100" height="100">
+			
+	    	<ul>
+	    	<input class="answer" type="radio" name="q9" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/9/90/Japanese_Hiragana_kyokashotai_U.png" width="20" height="20"></label>
+	    	<br>
+	        <input class="answer" type="radio" name="q9" value="1">
+	        <label id="correctString9"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Japanese_Hiragana_kyokashotai_I.png" width="20" height="20"></label>
+	        <br>
+	        <input class="answer" type="radio" name="q9" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Japanese_Hiragana_kyokashotai_SA.svg/500px-Japanese_Hiragana_kyokashotai_SA.svg.png" width="20" height="20"></label>
+	        <br>
+	        <input class="answer" type="radio" name="q9" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Japanese_Hiragana_kyokashotai_SO.svg/500px-Japanese_Hiragana_kyokashotai_SO.svg.png" width="20" height="20"></label>
+    		</ul>
+	  	</div>
+	  </td>
+	  <td>
+	  	<div style="text-align:center;">
+	  		<p class="question"><b>Question 10.</b></p>
+			<img class="questionNew" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Japanese_Hiragana_kyokashotai_KA.svg/500px-Japanese_Hiragana_kyokashotai_KA.svg.png" width="100" height="100">
+			
+	    	<ul>
+	    	<input class="answer" type="radio" name="q10" value="0">
+	        <label><b>o</b></label>
+	    	<br>
+	        <input class="answer" type="radio" name="q10" value="0">
+	        <label><b>ko</b></label>
+	        <br>
+	        <input class="answer" type="radio" name="q10" value="1">
+	        <label id="correctString10"><b>ka</b></label>
+	        <br>
+	        <input class="answer" type="radio" name="q10" value="0">
+	        <label><b>a</b></label>
+    		</ul>
+	  	</div>
+	  </td>
+	</tr>
+	</table>
+<br/>
+  <div class="submitter">
+          <input class="quizSubmit" id="submitButton" onClick="submitQuiz()"
+          type="submit" value="Submit" />
+    </div>
+  
+
+
+<!--show score upon submit-->
+    <div>
+    	<h2 class="quizScore" id="userScore"></h2>
+    </div>
+	</div>
+
+<script>
+
+// scripts here:
+
+	function submitQuiz() {
+		console.log('submitted');
+
+	// get each answer score
+		function answerScore (qName) {
+			var radiosNo = document.getElementsByName(qName);
+
+			for (var i = 0, length = radiosNo.length; i < length; i++) {
+   				if (radiosNo[i].checked) {
+			// do something with radiosNo
+					var answerValue = Number(radiosNo[i].value);
+				}
+			}
+			// change NaNs to zero
+			if (isNaN(answerValue)) {
+				answerValue = 0;
+			}
+			return answerValue;
+		}
+
+	// calc score with answerScore function
+		var calcScore = (answerScore('q1') + answerScore('q2') + answerScore('q3') + answerScore('q4')+ answerScore('q5')+ answerScore('q6')+ answerScore('q7')+ answerScore('q8')+ answerScore('q9')+ answerScore('q10'));
+		console.log("CalcScore: " + calcScore); // it works!
+
+
+	// calculate "possible score" integer
+		var questionCountArray = document.getElementsByClassName('question');
+
+		var questionCounter = 0;
+		for (var i = 0, length = questionCountArray.length; i < length; i++) {
+			questionCounter++;
+		}
+
+	// show score as "score/possible score"
+		var showScore = "You got: " + (calcScore/questionCounter)*100 +"%";
+	// if 4/4, "perfect score!"
+		if (calcScore === questionCounter) {
+			showScore = showScore + "&nbsp; <strong>You got 100% A Perfect Score!</strong>"
+		};
+		document.getElementById('userScore').innerHTML = showScore;
+	}
+
+$(document).ready(function() {
+
+	$('#submitButton').click(function() {
+		$(this).addClass('hide');
+	});
+
+});
+
+
+</script> 
+
+</div>
+
+
+
+
+
+
+<!--Quiz2-->	
+<div class="quiz2" style = "display: none;">
+
+<h1 class="quizHeader">Hiragana quiz</h1>
+<p class="quizSubHeader">Training Set 2</p>
+ 	<hr align="center" width="50%">
+	<hr align="center" width="75%">
+ <br>
+ 
+  <p style="font-family:'Times New Roman', Times, serif;font-weight:normal;font-size:25px;text-align:center;">For each question below select either the corresponding kana element or romaji equivalent to the character provided</p>
+   	<br>
+	<hr align="center" width="75%">
+	<hr align="center" width="50%">
+	<br>
+	<br>
+  
+	<table style="width:100%">
+	<tr>
+	  <td>
+	  	<div style="text-align:center;">
+	  		<p class="question2"><b>Question 1.</b></p>
+			<img class="questionNew" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Japanese_Hiragana_kyokashotai_A.svg/500px-Japanese_Hiragana_kyokashotai_A.svg.png" width="100" height="100">
+			
+	    	<ul>
+	    	<input class="answer" type="radio" name="q21" value="0">
+	        <label><b>a</b></label>
+	    	<br>
+	        <input class="answer" type="radio" name="q21" value="1">
+	        <label id="correctString21"><b>ma</b></label>
+	        <br>
+	        <input class="answer" type="radio" name="q21" value="0">
+	        <label><b>yu</b></label>
+	        <br>
+	        <input class="answer" type="radio" name="q21" value="0">
+	        <label><b>e</b></label>
+    		</ul>
+	  	</div>
+	  </td>
+	  <td>
+	  	<div style="text-align:center;">
+	  		<p class="question2"><b>Question 2.</b></p>
+			<img class="questionNew" src="https://maxcdn.icons8.com/wp-content/uploads/2014/02/e_lowercase-128.png" width="100" height="100">
+	    	<ul>
+	        <input class="answer" type="radio" name="q22" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Japanese_Hiragana_kyokashotai_O.png" width="20" height="20"></label> 
+	        <br>
+	        <input class="answer" type="radio" name="q22" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/b/be/Japanese_Hiragana_kyokashotai_E.png" width="20" height="20"></label>
+	        <br>
+	        <input class="answer" type="radio" name="q22" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Japanese_Hiragana_kyokashotai_KA.svg/500px-Japanese_Hiragana_kyokashotai_KA.svg.png" width="20" height="20"></label>
+	        <br>
+	        <input class="answer" type="radio" name="q22" value="1">
+	        <label  id="correctString22"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Japanese_Hiragana_kyokashotai_KE.png" width="20" height="20"></label>
+	    	</ul>
+
+	  	</div>
+	  </td>
+	  	  <td>
+	  	<div style="text-align:center;">
+	  		<p class="question2"><b>Question 3.</b></p>
+			<img class="questionNew" src="https://maxcdn.icons8.com/wp-content/uploads/2014/02/k_lowercase-128.png" width="100" height="100"><img  class="questionNew" id="png2" src="https://maxcdn.icons8.com/wp-content/uploads/2014/02/u_lowercase-128.png" width="100" height="100">
+			
+	    	<ul>
+	        <input class="answer" type="radio" name="q23" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Japanese_Hiragana_kyokashotai_O.png" width="20" height="20"></label>
+	        <br>
+	        <input class="answer" type="radio" name="q23" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Japanese_Hiragana_kyokashotai_KU.svg/500px-Japanese_Hiragana_kyokashotai_KU.svg.png" width="20" height="20"></label>
+	        <br>
+	        <input class="answer" type="radio" name="q23" value="1">
+	        <label  id="correctString23"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Japanese_Hiragana_kyokashotai_KE.png" width="20" height="20"></label>
+	        <br>
+	        <input class="answer" type="radio" name="q23" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Japanese_Hiragana_kyokashotai_KO.png" width="20" height="20"></label>
+	    	</ul>
+
+
+	  	</div>
+	  </td>
+	  	  <td>
+	  	<div style="text-align:center;">
+	  		<p class="question2"><b>Question 4.</b></p>
+			<img class="questionNew" src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Japanese_Hiragana_kyokashotai_O.png" width="100" height="100">
+			
+	    	<ul>
+	        <input class="answer" type="radio" name="q24" value="0">
+	        <label><b>a</b></label>
+	        <br>
+	        <input class="answer" type="radio" name="q24" value="0">
+	        <label><b>ko</b></label>
+	        <br>
+	        <input class="answer" type="radio" name="q24" value="0">
+	        <label><b>ki</b></label>
+	        <br>
+	        <input class="answer" type="radio" name="q24" value="1">
+	        <label  id="correctString24"><b>o</b></label>
+    		</ul>
+
+
+	  	</div>
+	  </td>
+	  	  <td>
+	  	<div style="text-align:center;">
+	  		<p class="question2"><b>Question 5.</b></p>
+			<img class="questionNew" src="https://maxcdn.icons8.com/wp-content/uploads/2014/02/k_lowercase-128.png" width="100" height="100">
+			<img class="questionNew" id="png2" src="https://maxcdn.icons8.com/wp-content/uploads/2014/02/o_lowercase-128.png" width="100" height="100">
+	    	<ul>
+	    	<input class="answer" type="radio" name="q25" value="1">
+	        <label  id="correctString25"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Japanese_Hiragana_kyokashotai_SE.svg/500px-Japanese_Hiragana_kyokashotai_SE.svg.png" width="20" height="20"></label>
+	    	<br>
+	        <input class="answer" type="radio" name="q25" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Japanese_Hiragana_kyokashotai_TE.png" width="20" height="20"></label>
+	        <br>
+	        <input class="answer" type="radio" name="q25" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Japanese_Hiragana_kyokashotai_KO.png" width="20" height="20"></label>
+	        <br>
+	        <input class="answer" type="radio" name="q25" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/3/37/Japanese_Hiragana_kyokashotai_NI.png" width="20" height="20"></label>
+    		</ul>
+	  	</div>
+	  </td>
+	</tr>
+	<tr>
+	<td>
+	  	<div style="text-align:center;">
+	  		<p class="question2"><b>Question 6.</b></p>
+			<img class="questionNew" src="https://maxcdn.icons8.com/wp-content/uploads/2014/02/k_lowercase-128.png" width="100" height="100"><img class="questionNew" id="png2" src="https://maxcdn.icons8.com/wp-content/uploads/2014/02/i_lowercase-128.png" width="100" height="100">
+			
+			
+	    	<ul>
+	    	<input class="answer" type="radio" name="q26" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Japanese_Hiragana_kyokashotai_KO.png" width="20" height="20"></label>
+	    	<br>
+	        <input class="answer" type="radio" name="q26" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Japanese_Hiragana_kyokashotai_NA.png" width="20" height="20"></label>
+	        <br>
+	        <input class="answer" type="radio" name="q26" value="1">
+	        <label  id="correctString26"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Japanese_Hiragana_kyokashotai_KI.svg/500px-Japanese_Hiragana_kyokashotai_KI.svg.png" width="20" height="20"></label>
+	        <br>
+	        <input class="answer" type="radio" name="q26" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Japanese_Hiragana_kyokashotai_TU.png" width="20" height="20"></label>
+    		</ul>
+	  	</div>
+	  </td>
+	  <td>
+	  	<div style="text-align:center;">
+	  		<p class="question2"><b>Question 7.</b></p>
+			<img class="questionNew" src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Japanese_Hiragana_kyokashotai_KE.png" width="100" height="100">
+			
+	    	<ul>
+	    	<input class="answer" type="radio" name="q27" value="1">
+	        <label id="correctString27"><b>ke</b></label>
+	    	<br>
+	        <input class="answer" type="radio" name="q27" value="0">
+	        <label><b>i</b></label>
+	        <br>
+	        <input class="answer" type="radio" name="q27" value="0">
+	        <label><b>ko</b></label>
+	        <br>
+	        <input class="answer" type="radio" name="q27" value="0">
+	        <label><b>e</b></label>
+    		</ul>
+	  	</div>
+	  </td>
+	  <td>
+	  	<div style="text-align:center;">
+	  		<p class="question2"><b>Question 8.</b></p>
+			<img class="questionNew" src="https://upload.wikimedia.org/wikipedia/commons/9/90/Japanese_Hiragana_kyokashotai_U.png" width="100" height="100">
+			
+	    	<ul>
+	    	<input class="answer" type="radio" name="q28" value="0">
+	        <label><b>ko</b></label>
+	    	<br>
+	        <input class="answer" type="radio" name="q28" value="0">
+	        <label><b>a</b></label>
+	        <br>
+	        <input class="answer" type="radio" name="q28" value="0">
+	        <label><b>o</b></label>
+	        <br>
+	        <input class="answer" type="radio" name="q28" value="1">
+	        <label  id="correctString28"><b>u</b></label>
+    		</ul>
+	  	</div>
+	  </td>
+	  
+	  <td>
+	  	<div style="text-align:center;">
+	  		<p class="question2"><b>Question 9.</b></p>
+			<img class="questionNew" src="https://maxcdn.icons8.com/wp-content/uploads/2014/02/i_lowercase-128.png" width="100" height="100">
+			
+	    	<ul>
+	    	<input class="answer" type="radio" name="q29" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/9/90/Japanese_Hiragana_kyokashotai_U.png" width="20" height="20"></label>
+	    	<br>
+	        <input class="answer" type="radio" name="q29" value="1">
+	        <label id="correctString29"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Japanese_Hiragana_kyokashotai_I.png" width="20" height="20"></label>
+	        <br>
+	        <input class="answer" type="radio" name="q29" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Japanese_Hiragana_kyokashotai_SA.svg/500px-Japanese_Hiragana_kyokashotai_SA.svg.png" width="20" height="20"></label>
+	        <br>
+	        <input class="answer" type="radio" name="q29" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Japanese_Hiragana_kyokashotai_SO.svg/500px-Japanese_Hiragana_kyokashotai_SO.svg.png" width="20" height="20"></label>
+    		</ul>
+	  	</div>
+	  </td>
+	  <td>
+	  	<div style="text-align:center;">
+	  		<p class="question2"><b>Question 10.</b></p>
+			<img class="questionNew" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Japanese_Hiragana_kyokashotai_KA.svg/500px-Japanese_Hiragana_kyokashotai_KA.svg.png" width="100" height="100">
+			
+	    	<ul>
+	    	<input class="answer" type="radio" name="q210" value="0">
+	        <label><b>o</b></label>
+	    	<br>
+	        <input class="answer" type="radio" name="q210" value="1">
+	        <label id="correctString210"><b>ko</b></label>
+	        <br>
+	        <input class="answer" type="radio" name="q210" value="0">
+	        <label><b>ka</b></label>
+	        <br>
+	        <input class="answer" type="radio" name="q210" value="0">
+	        <label><b>a</b></label>
+    		</ul>
+	  	</div>
+	  </td>
+	</tr>
+	</table>
+<br/>
+  <div class="submitter">
+          <input class="quizSubmit" id="submitButton2" onClick="submitQuiz2()"
+          type="submit" value="Submit" />
+    </div>
+  
+
+
+<!--show score upon submit-->
+    <div>
+    	<h2 class="quizScore" id="userScore2"></h2>
+    </div>
+	</div>
+
+<script>
+
+// scripts here:
+
+	function submitQuiz2() {
+		console.log('submitted');
+
+	// get each answer score
+		function answerScore2 (qName) {
+			var radiosNo = document.getElementsByName(qName);
+
+			for (var i = 0, length = radiosNo.length; i < length; i++) {
+   				if (radiosNo[i].checked) {
+			// do something with radiosNo
+					var answerValue = Number(radiosNo[i].value);
+				}
+			}
+			// change NaNs to zero
+			if (isNaN(answerValue)) {
+				answerValue = 0;
+			}
+			return answerValue;
+		}
+
+	// calc score with answerScore function
+		var calcScore2 = (answerScore2('q21') + answerScore2('q22') + answerScore2('q23') + answerScore2('q24')+ answerScore2('q25')+ answerScore2('q26')+ answerScore2('q27')+ answerScore2('q28')+ answerScore2('q29')+ answerScore2('q210'));
+		console.log("CalcScore: " + calcScore2); // it works!
+
+
+	// calculate "possible score" integer
+		var questionCountArray = document.getElementsByClassName('question2');
+
+		var questionCounter = 0;
+		for (var i = 0, length = questionCountArray.length; i < length; i++) {
+			questionCounter++;
+		}
+
+	// show score as "score/possible score"
+		var showScore = "You got: " + (calcScore2/questionCounter)*100 +"%";
+	// if 4/4, "perfect score!"
+		if (calcScore2 === questionCounter) {
+			showScore = showScore + "&nbsp; <strong>You got 100% A Perfect Score!</strong>"
+		};
+		document.getElementById('userScore2').innerHTML = showScore;
+	}
+
+$(document).ready(function() {
+
+	$('#submitButton2').click(function() {
+		$(this).addClass('hide');
+	});
+
+});
+
+
+</script> 
+
+</div>
+
+	
+	
+	
+	
+	
+
+	
+<!--Quiz3-->	
+<div class="quiz3" style = "display: none;">
+
+<h1 class="quizHeader">Hiragana quiz</h1>
+<p class="quizSubHeader">Training Set 3</p>
+ 	<hr align="center" width="50%">
+	<hr align="center" width="75%">
+ <br>
+ 
+  <p style="font-family:'Times New Roman', Times, serif;font-weight:normal;font-size:25px;text-align:center;">For each question below select either the corresponding kana element or romaji equivalent to the character provided</p>
+   	<br>
+	<hr align="center" width="75%">
+	<hr align="center" width="50%">
+	<br>
+	<br>
+  
+	<table style="width:100%">
+	<tr>
+	  <td>
+	  	<div style="text-align:center;">
+	  		<p class="question3"><b>Question 1.</b></p>
+			<img class="questionNew" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Japanese_Hiragana_kyokashotai_A.svg/500px-Japanese_Hiragana_kyokashotai_A.svg.png" width="100" height="100">
+			
+	    	<ul>
+	    	<input class="answer" type="radio" name="q31" value="0">
+	        <label><b>a</b></label>
+	    	<br>
+	        <input class="answer" type="radio" name="q31" value="0">
+	        <label><b>ma</b></label>
+	        <br>
+	        <input class="answer" type="radio" name="q31" value="0">
+	        <label><b>yu</b></label>
+	        <br>
+	        <input class="answer" type="radio" name="q31" value="1">
+	        <label id="correctString31"><b>e</b></label>
+    		</ul>
+	  	</div>
+	  </td>
+	  <td>
+	  	<div style="text-align:center;">
+	  		<p class="question3"><b>Question 2.</b></p>
+			<img class="questionNew" src="https://maxcdn.icons8.com/wp-content/uploads/2014/02/e_lowercase-128.png" width="100" height="100">
+	    	<ul>
+	        <input class="answer" type="radio" name="q32" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Japanese_Hiragana_kyokashotai_O.png" width="20" height="20"></label> 
+	        <br>
+	        <input class="answer" type="radio" name="q32" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/b/be/Japanese_Hiragana_kyokashotai_E.png" width="20" height="20"></label>
+	        <br>
+	        <input class="answer" type="radio" name="q32" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Japanese_Hiragana_kyokashotai_KA.svg/500px-Japanese_Hiragana_kyokashotai_KA.svg.png" width="20" height="20"></label>
+	        <br>
+	        <input class="answer" type="radio" name="q32" value="1">
+	        <label  id="correctString32"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Japanese_Hiragana_kyokashotai_KE.png" width="20" height="20"></label>
+	    	</ul>
+
+	  	</div>
+	  </td>
+	  	  <td>
+	  	<div style="text-align:center;">
+	  		<p class="question3"><b>Question 3.</b></p>
+			<img class="questionNew" src="https://maxcdn.icons8.com/wp-content/uploads/2014/02/k_lowercase-128.png" width="100" height="100"><img  class="questionNew" id="png2" src="https://maxcdn.icons8.com/wp-content/uploads/2014/02/u_lowercase-128.png" width="100" height="100">
+			
+	    	<ul>
+	        <input class="answer" type="radio" name="q33" value="1">
+	        <label  id="correctString33"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Japanese_Hiragana_kyokashotai_O.png" width="20" height="20"></label>
+	        <br>
+	        <input class="answer" type="radio" name="q33" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Japanese_Hiragana_kyokashotai_KU.svg/500px-Japanese_Hiragana_kyokashotai_KU.svg.png" width="20" height="20"></label>
+	        <br>
+	        <input class="answer" type="radio" name="q33" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Japanese_Hiragana_kyokashotai_KE.png" width="20" height="20"></label>
+	        <br>
+	        <input class="answer" type="radio" name="q33" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Japanese_Hiragana_kyokashotai_KO.png" width="20" height="20"></label>
+	    	</ul>
+
+
+	  	</div>
+	  </td>
+	  	  <td>
+	  	<div style="text-align:center;">
+	  		<p class="question3"><b>Question 4.</b></p>
+			<img class="questionNew" src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Japanese_Hiragana_kyokashotai_O.png" width="100" height="100">
+			
+	    	<ul>
+	        <input class="answer" type="radio" name="q34" value="0">
+	        <label><b>a</b></label>
+	        <br>
+	        <input class="answer" type="radio" name="q34" value="0">
+	        <label><b>ko</b></label>
+	        <br>
+	        <input class="answer" type="radio" name="q34" value="1">
+	        <label  id="correctString34"><b>ki</b></label>
+	        <br>
+	        <input class="answer" type="radio" name="q34" value="0">
+	        <label><b>o</b></label>
+    		</ul>
+
+
+	  	</div>
+	  </td>
+	  	  <td>
+	  	<div style="text-align:center;">
+	  		<p class="question3"><b>Question 5.</b></p>
+			<img class="questionNew" src="https://maxcdn.icons8.com/wp-content/uploads/2014/02/k_lowercase-128.png" width="100" height="100">
+			<img class="questionNew" id="png2" src="https://maxcdn.icons8.com/wp-content/uploads/2014/02/o_lowercase-128.png" width="100" height="100">
+	    	<ul>
+	    	<input class="answer" type="radio" name="q35" value="1">
+	        <label  id="correctString35"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Japanese_Hiragana_kyokashotai_SE.svg/500px-Japanese_Hiragana_kyokashotai_SE.svg.png" width="20" height="20"></label>
+	    	<br>
+	        <input class="answer" type="radio" name="q35" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Japanese_Hiragana_kyokashotai_TE.png" width="20" height="20"></label>
+	        <br>
+	        <input class="answer" type="radio" name="q35" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Japanese_Hiragana_kyokashotai_KO.png" width="20" height="20"></label>
+	        <br>
+	        <input class="answer" type="radio" name="q35" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/3/37/Japanese_Hiragana_kyokashotai_NI.png" width="20" height="20"></label>
+    		</ul>
+	  	</div>
+	  </td>
+	</tr>
+	<tr>
+	<td>
+	  	<div style="text-align:center;">
+	  		<p class="question3"><b>Question 6.</b></p>
+			<img class="questionNew" src="https://maxcdn.icons8.com/wp-content/uploads/2014/02/k_lowercase-128.png" width="100" height="100"><img class="questionNew" id="png2" src="https://maxcdn.icons8.com/wp-content/uploads/2014/02/i_lowercase-128.png" width="100" height="100">
+			
+			
+	    	<ul>
+	    	<input class="answer" type="radio" name="q36" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Japanese_Hiragana_kyokashotai_KO.png" width="20" height="20"></label>
+	    	<br>
+	        <input class="answer" type="radio" name="q36" value="1">
+	        <label  id="correctString36"><img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Japanese_Hiragana_kyokashotai_NA.png" width="20" height="20"></label>
+	        <br>
+	        <input class="answer" type="radio" name="q36" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Japanese_Hiragana_kyokashotai_KI.svg/500px-Japanese_Hiragana_kyokashotai_KI.svg.png" width="20" height="20"></label>
+	        <br>
+	        <input class="answer" type="radio" name="q36" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Japanese_Hiragana_kyokashotai_TU.png" width="20" height="20"></label>
+    		</ul>
+	  	</div>
+	  </td>
+	  <td>
+	  	<div style="text-align:center;">
+	  		<p class="question3"><b>Question 7.</b></p>
+			<img class="questionNew" src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Japanese_Hiragana_kyokashotai_KE.png" width="100" height="100">
+			
+	    	<ul>
+	    	<input class="answer" type="radio" name="q37" value="1">
+	        <label id="correctString37"><b>ke</b></label>
+	    	<br>
+	        <input class="answer" type="radio" name="q37" value="0">
+	        <label><b>i</b></label>
+	        <br>
+	        <input class="answer" type="radio" name="q37" value="0">
+	        <label><b>ko</b></label>
+	        <br>
+	        <input class="answer" type="radio" name="q37" value="0">
+	        <label><b>e</b></label>
+    		</ul>
+	  	</div>
+	  </td>
+	  <td>
+	  	<div style="text-align:center;">
+	  		<p class="question3"><b>Question 8.</b></p>
+			<img class="questionNew" src="https://upload.wikimedia.org/wikipedia/commons/9/90/Japanese_Hiragana_kyokashotai_U.png" width="100" height="100">
+			
+	    	<ul>
+	    	<input class="answer" type="radio" name="q38" value="0">
+	        <label><b>ko</b></label>
+	    	<br>
+	        <input class="answer" type="radio" name="q38" value="0">
+	        <label><b>a</b></label>
+	        <br>
+	        <input class="answer" type="radio" name="q38" value="0">
+	        <label><b>o</b></label>
+	        <br>
+	        <input class="answer" type="radio" name="q38" value="1">
+	        <label  id="correctString38"><b>u</b></label>
+    		</ul>
+	  	</div>
+	  </td>
+	  
+	  <td>
+	  	<div style="text-align:center;">
+	  		<p class="question3"><b>Question 9.</b></p>
+			<img class="questionNew" src="https://maxcdn.icons8.com/wp-content/uploads/2014/02/i_lowercase-128.png" width="100" height="100">
+			
+	    	<ul>
+	    	<input class="answer" type="radio" name="q39" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/9/90/Japanese_Hiragana_kyokashotai_U.png" width="20" height="20"></label>
+	    	<br>
+	        <input class="answer" type="radio" name="q39" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Japanese_Hiragana_kyokashotai_I.png" width="20" height="20"></label>
+	        <br>
+	        <input class="answer" type="radio" name="q39" value="1">
+	        <label id="correctString39"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Japanese_Hiragana_kyokashotai_SA.svg/500px-Japanese_Hiragana_kyokashotai_SA.svg.png" width="20" height="20"></label>
+	        <br>
+	        <input class="answer" type="radio" name="q39" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Japanese_Hiragana_kyokashotai_SO.svg/500px-Japanese_Hiragana_kyokashotai_SO.svg.png" width="20" height="20"></label>
+    		</ul>
+	  	</div>
+	  </td>
+	  <td>
+	  	<div style="text-align:center;">
+	  		<p class="question3"><b>Question 10.</b></p>
+			<img class="questionNew" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Japanese_Hiragana_kyokashotai_KA.svg/500px-Japanese_Hiragana_kyokashotai_KA.svg.png" width="100" height="100">
+			
+	    	<ul>
+	    	<input class="answer" type="radio" name="q310" value="0">
+	        <label><b>o</b></label>
+	    	<br>
+	        <input class="answer" type="radio" name="q310" value="1">
+	        <label id="correctString310"><b>ko</b></label>
+	        <br>
+	        <input class="answer" type="radio" name="q310" value="0">
+	        <label><b>ka</b></label>
+	        <br>
+	        <input class="answer" type="radio" name="q310" value="0">
+	        <label><b>a</b></label>
+    		</ul>
+	  	</div>
+	  </td>
+	</tr>
+	</table>
+<br/>
+  <div class="submitter">
+          <input class="quizSubmit" id="submitButton3" onClick="submitQuiz3()"
+          type="submit" value="Submit" />
+    </div>
+  
+
+
+<!--show score upon submit-->
+    <div>
+    	<h2 class="quizScore" id="userScore3"></h2>
+    </div>
+	</div>
+
+<script>
+
+// scripts here:
+
+	function submitQuiz3() {
+		console.log('submitted');
+
+	// get each answer score
+		function answerScore3 (qName) {
+			var radiosNo = document.getElementsByName(qName);
+
+			for (var i = 0, length = radiosNo.length; i < length; i++) {
+   				if (radiosNo[i].checked) {
+			// do something with radiosNo
+					var answerValue = Number(radiosNo[i].value);
+				}
+			}
+			// change NaNs to zero
+			if (isNaN(answerValue)) {
+				answerValue = 0;
+			}
+			return answerValue;
+		}
+
+	// calc score with answerScore function
+		var calcScore3 = (answerScore3('q31') + answerScore3('q32') + answerScore3('q33') + answerScore3('q34')+ answerScore3('q35')+ answerScore3('q36')+ answerScore3('q37')+ answerScore3('q38')+ answerScore3('q39')+ answerScore3('q310'));
+		console.log("CalcScore: " + calcScore3); // it works!
+
+
+	// calculate "possible score" integer
+		var questionCountArray = document.getElementsByClassName('question3');
+
+		var questionCounter = 0;
+		for (var i = 0, length = questionCountArray.length; i < length; i++) {
+			questionCounter++;
+		}
+
+	// show score as "score/possible score"
+		var showScore = "You got: " + (calcScore3/questionCounter)*100 +"%";
+	// if 4/4, "perfect score!"
+		if (calcScore3 === questionCounter) {
+			showScore = showScore + "&nbsp; <strong>You got 100% A Perfect Score!</strong>"
+		};
+		document.getElementById('userScore3').innerHTML = showScore;
+	}
+
+$(document).ready(function() {
+
+	$('#submitButton3').click(function() {
+		$(this).addClass('hide');
+	});
+
+});
+
+
+</script> 
+
+</div>	
+	
+	
+	
+	
+<!--Quiz4-->	
+<div class="quiz4" style = "display: none;">
+
+<h1 class="quizHeader">Hiragana quiz</h1>
+<p class="quizSubHeader">Training Set 4</p>
+ 	<hr align="center" width="50%">
+	<hr align="center" width="75%">
+ <br>
+ 
+  <p style="font-family:'Times New Roman', Times, serif;font-weight:normal;font-size:25px;text-align:center;">For each question below select either the corresponding kana element or romaji equivalent to the character provided</p>
+   	<br>
+	<hr align="center" width="75%">
+	<hr align="center" width="50%">
+	<br>
+	<br>
+  
+	<table style="width:100%">
+	<tr>
+	  <td>
+	  	<div style="text-align:center;">
+	  		<p class="question4"><b>Question 1.</b></p>
+			<img class="questionNew" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Japanese_Hiragana_kyokashotai_A.svg/500px-Japanese_Hiragana_kyokashotai_A.svg.png" width="100" height="100">
+			
+	    	<ul>
+	    	<input class="answer" type="radio" name="q41" value="1">
+	        <label id="correctString41"><b>a</b></label>
+	    	<br>
+	        <input class="answer" type="radio" name="q41" value="0">
+	        <label><b>ma</b></label>
+	        <br>
+	        <input class="answer" type="radio" name="q41" value="0">
+	        <label><b>yu</b></label>
+	        <br>
+	        <input class="answer" type="radio" name="q41" value="0">
+	        <label><b>e</b></label>
+    		</ul>
+	  	</div>
+	  </td>
+	  <td>
+	  	<div style="text-align:center;">
+	  		<p class="question4"><b>Question 2.</b></p>
+			<img class="questionNew" src="https://maxcdn.icons8.com/wp-content/uploads/2014/02/e_lowercase-128.png" width="100" height="100">
+	    	<ul>
+	        <input class="answer" type="radio" name="q42" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Japanese_Hiragana_kyokashotai_O.png" width="20" height="20"></label> 
+	        <br>
+	        <input class="answer" type="radio" name="q42" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/b/be/Japanese_Hiragana_kyokashotai_E.png" width="20" height="20"></label>
+	        <br>
+	        <input class="answer" type="radio" name="q42" value="1">
+	        <label  id="correctString42"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Japanese_Hiragana_kyokashotai_KA.svg/500px-Japanese_Hiragana_kyokashotai_KA.svg.png" width="20" height="20"></label>
+	        <br>
+	        <input class="answer" type="radio" name="q42" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Japanese_Hiragana_kyokashotai_KE.png" width="20" height="20"></label>
+	    	</ul>
+
+	  	</div>
+	  </td>
+	  	  <td>
+	  	<div style="text-align:center;">
+	  		<p class="question4"><b>Question 3.</b></p>
+			<img class="questionNew" src="https://maxcdn.icons8.com/wp-content/uploads/2014/02/k_lowercase-128.png" width="100" height="100"><img  class="questionNew" id="png2" src="https://maxcdn.icons8.com/wp-content/uploads/2014/02/u_lowercase-128.png" width="100" height="100">
+			
+	    	<ul>
+	        <input class="answer" type="radio" name="q43" value="1">
+	        <label  id="correctString43"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Japanese_Hiragana_kyokashotai_O.png" width="20" height="20"></label>
+	        <br>
+	        <input class="answer" type="radio" name="q43" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Japanese_Hiragana_kyokashotai_KU.svg/500px-Japanese_Hiragana_kyokashotai_KU.svg.png" width="20" height="20"></label>
+	        <br>
+	        <input class="answer" type="radio" name="q43" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Japanese_Hiragana_kyokashotai_KE.png" width="20" height="20"></label>
+	        <br>
+	        <input class="answer" type="radio" name="q43" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Japanese_Hiragana_kyokashotai_KO.png" width="20" height="20"></label>
+	    	</ul>
+
+
+	  	</div>
+	  </td>
+	  	  <td>
+	  	<div style="text-align:center;">
+	  		<p class="question4"><b>Question 4.</b></p>
+			<img class="questionNew" src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Japanese_Hiragana_kyokashotai_O.png" width="100" height="100">
+			
+	    	<ul>
+	        <input class="answer" type="radio" name="q44" value="0">
+	        <label><b>a</b></label>
+	        <br>
+	        <input class="answer" type="radio" name="q44" value="1">
+	        <label  id="correctString44"><b>ko</b></label>
+	        <br>
+	        <input class="answer" type="radio" name="q44" value="0">
+	        <label><b>ki</b></label>
+	        <br>
+	        <input class="answer" type="radio" name="q44" value="0">
+	        <label><b>o</b></label>
+    		</ul>
+
+
+	  	</div>
+	  </td>
+	  	  <td>
+	  	<div style="text-align:center;">
+	  		<p class="question4"><b>Question 5.</b></p>
+			<img class="questionNew" src="https://maxcdn.icons8.com/wp-content/uploads/2014/02/k_lowercase-128.png" width="100" height="100">
+			<img class="questionNew" id="png2" src="https://maxcdn.icons8.com/wp-content/uploads/2014/02/o_lowercase-128.png" width="100" height="100">
+	    	<ul>
+	    	<input class="answer" type="radio" name="q45" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Japanese_Hiragana_kyokashotai_SE.svg/500px-Japanese_Hiragana_kyokashotai_SE.svg.png" width="20" height="20"></label>
+	    	<br>
+	        <input class="answer" type="radio" name="q45" value="1">
+	        <label  id="correctString45"><img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Japanese_Hiragana_kyokashotai_TE.png" width="20" height="20"></label>
+	        <br>
+	        <input class="answer" type="radio" name="q45" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Japanese_Hiragana_kyokashotai_KO.png" width="20" height="20"></label>
+	        <br>
+	        <input class="answer" type="radio" name="q45" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/3/37/Japanese_Hiragana_kyokashotai_NI.png" width="20" height="20"></label>
+    		</ul>
+	  	</div>
+	  </td>
+	</tr>
+	<tr>
+	<td>
+	  	<div style="text-align:center;">
+	  		<p class="question4"><b>Question 6.</b></p>
+			<img class="questionNew" src="https://maxcdn.icons8.com/wp-content/uploads/2014/02/k_lowercase-128.png" width="100" height="100"><img class="questionNew" id="png2" src="https://maxcdn.icons8.com/wp-content/uploads/2014/02/i_lowercase-128.png" width="100" height="100">
+			
+			
+	    	<ul>
+	    	<input class="answer" type="radio" name="q46" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Japanese_Hiragana_kyokashotai_KO.png" width="20" height="20"></label>
+	    	<br>
+	        <input class="answer" type="radio" name="q46" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Japanese_Hiragana_kyokashotai_NA.png" width="20" height="20"></label>
+	        <br>
+	        <input class="answer" type="radio" name="q46" value="1">
+	        <label  id="correctString46"img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Japanese_Hiragana_kyokashotai_KI.svg/500px-Japanese_Hiragana_kyokashotai_KI.svg.png" width="20" height="20"></label>
+	        <br>
+	        <input class="answer" type="radio" name="q46" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Japanese_Hiragana_kyokashotai_TU.png" width="20" height="20"></label>
+    		</ul>
+	  	</div>
+	  </td>
+	  <td>
+	  	<div style="text-align:center;">
+	  		<p class="question4"><b>Question 7.</b></p>
+			<img class="questionNew" src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Japanese_Hiragana_kyokashotai_KE.png" width="100" height="100">
+			
+	    	<ul>
+	    	<input class="answer" type="radio" name="q47" value="1">
+	        <label id="correctString47"><b>ke</b></label>
+	    	<br>
+	        <input class="answer" type="radio" name="q47" value="0">
+	        <label><b>i</b></label>
+	        <br>
+	        <input class="answer" type="radio" name="q47" value="0">
+	        <label><b>ko</b></label>
+	        <br>
+	        <input class="answer" type="radio" name="q47" value="0">
+	        <label><b>e</b></label>
+    		</ul>
+	  	</div>
+	  </td>
+	  <td>
+	  	<div style="text-align:center;">
+	  		<p class="question4"><b>Question 8.</b></p>
+			<img class="questionNew" src="https://upload.wikimedia.org/wikipedia/commons/9/90/Japanese_Hiragana_kyokashotai_U.png" width="100" height="100">
+			
+	    	<ul>
+	    	<input class="answer" type="radio" name="q48" value="0">
+	        <label><b>ko</b></label>
+	    	<br>
+	        <input class="answer" type="radio" name="q48" value="0">
+	        <label><b>a</b></label>
+	        <br>
+	        <input class="answer" type="radio" name="q48" value="0">
+	        <label><b>o</b></label>
+	        <br>
+	        <input class="answer" type="radio" name="q48" value="1">
+	        <label  id="correctString48"><b>u</b></label>
+    		</ul>
+	  	</div>
+	  </td>
+	  
+	  <td>
+	  	<div style="text-align:center;">
+	  		<p class="question4"><b>Question 9.</b></p>
+			<img class="questionNew" src="https://maxcdn.icons8.com/wp-content/uploads/2014/02/i_lowercase-128.png" width="100" height="100">
+			
+	    	<ul>
+	    	<input class="answer" type="radio" name="q49" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/9/90/Japanese_Hiragana_kyokashotai_U.png" width="20" height="20"></label>
+	    	<br>
+	        <input class="answer" type="radio" name="q49" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Japanese_Hiragana_kyokashotai_I.png" width="20" height="20"></label>
+	        <br>
+	        <input class="answer" type="radio" name="q49" value="1">
+	        <label id="correctString49"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Japanese_Hiragana_kyokashotai_SA.svg/500px-Japanese_Hiragana_kyokashotai_SA.svg.png" width="20" height="20"></label>
+	        <br>
+	        <input class="answer" type="radio" name="q49" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Japanese_Hiragana_kyokashotai_SO.svg/500px-Japanese_Hiragana_kyokashotai_SO.svg.png" width="20" height="20"></label>
+    		</ul>
+	  	</div>
+	  </td>
+	  <td>
+	  	<div style="text-align:center;">
+	  		<p class="question4"><b>Question 10.</b></p>
+			<img class="questionNew" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Japanese_Hiragana_kyokashotai_KA.svg/500px-Japanese_Hiragana_kyokashotai_KA.svg.png" width="100" height="100">
+			
+	    	<ul>
+	    	<input class="answer" type="radio" name="q410" value="1">
+	        <label id="correctString410"><b>o</b></label>
+	    	<br>
+	        <input class="answer" type="radio" name="q410" value="0">
+	        <label><b>ko</b></label>
+	        <br>
+	        <input class="answer" type="radio" name="q410" value="0">
+	        <label><b>ka</b></label>
+	        <br>
+	        <input class="answer" type="radio" name="q410" value="0">
+	        <label><b>a</b></label>
+    		</ul>
+	  	</div>
+	  </td>
+	</tr>
+	</table>
+<br/>
+  <div class="submitter">
+          <input class="quizSubmit" id="submitButton4" onClick="submitQuiz4()"
+          type="submit" value="Submit" />
+    </div>
+  
+
+
+<!--show score upon submit-->
+    <div>
+    	<h2 class="quizScore" id="userScore4"></h2>
+    </div>
+	</div>
+
+<script>
+
+// scripts here:
+
+	function submitQuiz4() {
+		console.log('submitted');
+
+	// get each answer score
+		function answerScore4 (qName) {
+			var radiosNo = document.getElementsByName(qName);
+
+			for (var i = 0, length = radiosNo.length; i < length; i++) {
+   				if (radiosNo[i].checked) {
+			// do something with radiosNo
+					var answerValue = Number(radiosNo[i].value);
+				}
+			}
+			// change NaNs to zero
+			if (isNaN(answerValue)) {
+				answerValue = 0;
+			}
+			return answerValue;
+		}
+
+	// calc score with answerScore function
+		var calcScore4 = (answerScore4('q41') + answerScore4('q42') + answerScore4('q43') + answerScore4('q44')+ answerScore4('q45')+ answerScore4('q46')+ answerScore4('q47')+ answerScore4('q48')+ answerScore4('q49')+ answerScore4('q410'));
+		console.log("CalcScore: " + calcScore4); // it works!
+
+
+	// calculate "possible score" integer
+		var questionCountArray = document.getElementsByClassName('question4');
+
+		var questionCounter = 0;
+		for (var i = 0, length = questionCountArray.length; i < length; i++) {
+			questionCounter++;
+		}
+
+	// show score as "score/possible score"
+		var showScore = "You got: " + (calcScore4/questionCounter)*100 +"%";
+	// if 4/4, "perfect score!"
+		if (calcScore4 === questionCounter) {
+			showScore = showScore + "&nbsp; <strong>You got 100% A Perfect Score!</strong>"
+		};
+		document.getElementById('userScore4').innerHTML = showScore;
+	}
+
+$(document).ready(function() {
+
+	$('#submitButton4').click(function() {
+		$(this).addClass('hide');
+	});
+
+});
+
+
+</script> 
+
+</div>	
+
+
+
+
+
+<!--Quiz5-->	
+<div class="quiz5" style = "display: none;">
+
+<h1 class="quizHeader">Hiragana quiz</h1>
+<p class="quizSubHeader">Training Set 5</p>
+ 	<hr align="center" width="50%">
+	<hr align="center" width="75%">
+ <br>
+ 
+  <p style="font-family:'Times New Roman', Times, serif;font-weight:normal;font-size:25px;text-align:center;">For each question below select either the corresponding kana element or romaji equivalent to the character provided</p>
+   	<br>
+	<hr align="center" width="75%">
+	<hr align="center" width="50%">
+	<br>
+	<br>
+  
+	<table style="width:100%">
+	<tr>
+	  <td>
+	  	<div style="text-align:center;">
+	  		<p class="question5"><b>Question 1.</b></p>
+			<img class="questionNew" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Japanese_Hiragana_kyokashotai_A.svg/500px-Japanese_Hiragana_kyokashotai_A.svg.png" width="100" height="100">
+			
+	    	<ul>
+	    	<input class="answer" type="radio" name="q51" value="1">
+	        <label id="correctString51"><b>a</b></label>
+	    	<br>
+	        <input class="answer" type="radio" name="q51" value="0">
+	        <label><b>ma</b></label>
+	        <br>
+	        <input class="answer" type="radio" name="q51" value="0">
+	        <label><b>yu</b></label>
+	        <br>
+	        <input class="answer" type="radio" name="q51" value="0">
+	        <label><b>e</b></label>
+    		</ul>
+	  	</div>
+	  </td>
+	  <td>
+	  	<div style="text-align:center;">
+	  		<p class="question5"><b>Question 2.</b></p>
+			<img class="questionNew" src="https://maxcdn.icons8.com/wp-content/uploads/2014/02/e_lowercase-128.png" width="100" height="100">
+	    	<ul>
+	        <input class="answer" type="radio" name="q52" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Japanese_Hiragana_kyokashotai_O.png" width="20" height="20"></label> 
+	        <br>
+	        <input class="answer" type="radio" name="q52" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/b/be/Japanese_Hiragana_kyokashotai_E.png" width="20" height="20"></label>
+	        <br>
+	        <input class="answer" type="radio" name="q52" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Japanese_Hiragana_kyokashotai_KA.svg/500px-Japanese_Hiragana_kyokashotai_KA.svg.png" width="20" height="20"></label>
+	        <br>
+	        <input class="answer" type="radio" name="q52" value="1">
+	        <label  id="correctString52"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Japanese_Hiragana_kyokashotai_KE.png" width="20" height="20"></label>
+	    	</ul>
+
+	  	</div>
+	  </td>
+	  	  <td>
+	  	<div style="text-align:center;">
+	  		<p class="question5"><b>Question 3.</b></p>
+			<img class="questionNew" src="https://maxcdn.icons8.com/wp-content/uploads/2014/02/k_lowercase-128.png" width="100" height="100"><img  class="questionNew" id="png2" src="https://maxcdn.icons8.com/wp-content/uploads/2014/02/u_lowercase-128.png" width="100" height="100">
+			
+	    	<ul>
+	        <input class="answer" type="radio" name="q53" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Japanese_Hiragana_kyokashotai_O.png" width="20" height="20"></label>
+	        <br>
+	        <input class="answer" type="radio" name="q53" value="1">
+	        <label  id="correctString53"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Japanese_Hiragana_kyokashotai_KU.svg/500px-Japanese_Hiragana_kyokashotai_KU.svg.png" width="20" height="20"></label>
+	        <br>
+	        <input class="answer" type="radio" name="q53" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Japanese_Hiragana_kyokashotai_KE.png" width="20" height="20"></label>
+	        <br>
+	        <input class="answer" type="radio" name="q53" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Japanese_Hiragana_kyokashotai_KO.png" width="20" height="20"></label>
+	    	</ul>
+
+
+	  	</div>
+	  </td>
+	  	  <td>
+	  	<div style="text-align:center;">
+	  		<p class="question5"><b>Question 4.</b></p>
+			<img class="questionNew" src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Japanese_Hiragana_kyokashotai_O.png" width="100" height="100">
+			
+	    	<ul>
+	        <input class="answer" type="radio" name="q54" value="0">
+	        <label><b>a</b></label>
+	        <br>
+	        <input class="answer" type="radio" name="q54" value="0">
+	        <label><b>ko</b></label>
+	        <br>
+	        <input class="answer" type="radio" name="q54" value="1">
+	        <label  id="correctString54"><b>ki</b></label>
+	        <br>
+	        <input class="answer" type="radio" name="q54" value="0">
+	        <label><b>o</b></label>
+    		</ul>
+
+
+	  	</div>
+	  </td>
+	  	  <td>
+	  	<div style="text-align:center;">
+	  		<p class="question5"><b>Question 5.</b></p>
+			<img class="questionNew" src="https://maxcdn.icons8.com/wp-content/uploads/2014/02/k_lowercase-128.png" width="100" height="100">
+			<img class="questionNew" id="png2" src="https://maxcdn.icons8.com/wp-content/uploads/2014/02/o_lowercase-128.png" width="100" height="100">
+	    	<ul>
+	    	<input class="answer" type="radio" name="q55" value="1">
+	        <label  id="correctString55"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Japanese_Hiragana_kyokashotai_SE.svg/500px-Japanese_Hiragana_kyokashotai_SE.svg.png" width="20" height="20"></label>
+	    	<br>
+	        <input class="answer" type="radio" name="q55" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Japanese_Hiragana_kyokashotai_TE.png" width="20" height="20"></label>
+	        <br>
+	        <input class="answer" type="radio" name="q55" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Japanese_Hiragana_kyokashotai_KO.png" width="20" height="20"></label>
+	        <br>
+	        <input class="answer" type="radio" name="q55" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/3/37/Japanese_Hiragana_kyokashotai_NI.png" width="20" height="20"></label>
+    		</ul>
+	  	</div>
+	  </td>
+	</tr>
+	<tr>
+	<td>
+	  	<div style="text-align:center;">
+	  		<p class="question5"><b>Question 6.</b></p>
+			<img class="questionNew" src="https://maxcdn.icons8.com/wp-content/uploads/2014/02/k_lowercase-128.png" width="100" height="100"><img class="questionNew" id="png2" src="https://maxcdn.icons8.com/wp-content/uploads/2014/02/i_lowercase-128.png" width="100" height="100">
+			
+			
+	    	<ul>
+	    	<input class="answer" type="radio" name="q56" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Japanese_Hiragana_kyokashotai_KO.png" width="20" height="20"></label>
+	    	<br>
+	        <input class="answer" type="radio" name="q56" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Japanese_Hiragana_kyokashotai_NA.png" width="20" height="20"></label>
+	        <br>
+	        <input class="answer" type="radio" name="q56" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Japanese_Hiragana_kyokashotai_KI.svg/500px-Japanese_Hiragana_kyokashotai_KI.svg.png" width="20" height="20"></label>
+	        <br>
+	        <input class="answer" type="radio" name="q56" value="1">
+	        <label id="correctString56"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Japanese_Hiragana_kyokashotai_TU.png" width="20" height="20"></label>
+    		</ul>
+	  	</div>
+	  </td>
+	  <td>
+	  	<div style="text-align:center;">
+	  		<p class="question5"><b>Question 7.</b></p>
+			<img class="questionNew" src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Japanese_Hiragana_kyokashotai_KE.png" width="100" height="100">
+			
+	    	<ul>
+	    	<input class="answer" type="radio" name="q57" value="1">
+	        <label id="correctString57"><b>ke</b></label>
+	    	<br>
+	        <input class="answer" type="radio" name="q57" value="0">
+	        <label><b>i</b></label>
+	        <br>
+	        <input class="answer" type="radio" name="q57" value="0">
+	        <label><b>ko</b></label>
+	        <br>
+	        <input class="answer" type="radio" name="q57" value="0">
+	        <label><b>e</b></label>
+    		</ul>
+	  	</div>
+	  </td>
+	  <td>
+	  	<div style="text-align:center;">
+	  		<p class="question5"><b>Question 8.</b></p>
+			<img class="questionNew" src="https://upload.wikimedia.org/wikipedia/commons/9/90/Japanese_Hiragana_kyokashotai_U.png" width="100" height="100">
+			
+	    	<ul>
+	    	<input class="answer" type="radio" name="q58" value="0">
+	        <label><b>ko</b></label>
+	    	<br>
+	        <input class="answer" type="radio" name="q58" value="0">
+	        <label><b>a</b></label>
+	        <br>
+	        <input class="answer" type="radio" name="q58" value="0">
+	        <label><b>o</b></label>
+	        <br>
+	        <input class="answer" type="radio" name="q58" value="1">
+	        <label  id="correctString58"><b>u</b></label>
+    		</ul>
+	  	</div>
+	  </td>
+	  
+	  <td>
+	  	<div style="text-align:center;">
+	  		<p class="question5"><b>Question 9.</b></p>
+			<img class="questionNew" src="https://maxcdn.icons8.com/wp-content/uploads/2014/02/i_lowercase-128.png" width="100" height="100">
+			
+	    	<ul>
+	    	<input class="answer" type="radio" name="q59" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/9/90/Japanese_Hiragana_kyokashotai_U.png" width="20" height="20"></label>
+	    	<br>
+	        <input class="answer" type="radio" name="q59" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Japanese_Hiragana_kyokashotai_I.png" width="20" height="20"></label>
+	        <br>
+	        <input class="answer" type="radio" name="q59" value="1">
+	        <label id="correctString59"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Japanese_Hiragana_kyokashotai_SA.svg/500px-Japanese_Hiragana_kyokashotai_SA.svg.png" width="20" height="20"></label>
+	        <br>
+	        <input class="answer" type="radio" name="q59" value="0">
+	        <label><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Japanese_Hiragana_kyokashotai_SO.svg/500px-Japanese_Hiragana_kyokashotai_SO.svg.png" width="20" height="20"></label>
+    		</ul>
+	  	</div>
+	  </td>
+	  <td>
+	  	<div style="text-align:center;">
+	  		<p class="question5"><b>Question 10.</b></p>
+			<img class="questionNew" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Japanese_Hiragana_kyokashotai_KA.svg/500px-Japanese_Hiragana_kyokashotai_KA.svg.png" width="100" height="100">
+			
+	    	<ul>
+	    	<input class="answer" type="radio" name="q510" value="0">
+	        <label><b>o</b></label>
+	    	<br>
+	        <input class="answer" type="radio" name="q510" value="1">
+	        <label id="correctString510"><b>ko</b></label>
+	        <br>
+	        <input class="answer" type="radio" name="q510" value="0">
+	        <label><b>ka</b></label>
+	        <br>
+	        <input class="answer" type="radio" name="q510" value="0">
+	        <label><b>a</b></label>
+    		</ul>
+	  	</div>
+	  </td>
+	</tr>
+	</table>
+<br/>
+  <div class="submitter">
+          <input class="quizSubmit" id="submitButton5" onClick="submitQuiz5()"
+          type="submit" value="Submit" />
+    </div>
+  
+
+
+<!--show score upon submit-->
+    <div>
+    	<h2 class="quizScore" id="userScore5"></h2>
+    </div>
+	</div>
+
+<script>
+
+// scripts here:
+
+	function submitQuiz5() {
+		console.log('submitted');
+
+	// get each answer score
+		function answerScore5 (qName) {
+			var radiosNo = document.getElementsByName(qName);
+
+			for (var i = 0, length = radiosNo.length; i < length; i++) {
+   				if (radiosNo[i].checked) {
+			// do something with radiosNo
+					var answerValue = Number(radiosNo[i].value);
+				}
+			}
+			// change NaNs to zero
+			if (isNaN(answerValue)) {
+				answerValue = 0;
+			}
+			return answerValue;
+		}
+
+	// calc score with answerScore function
+		var calcScore5 = (answerScore5('q51') + answerScore5('q52') + answerScore5('q53') + answerScore5('q54')+ answerScore5('q55')+ answerScore5('q56')+ answerScore5('q57')+ answerScore5('q58')+ answerScore5('q59')+ answerScore5('q510'));
+		console.log("CalcScore: " + calcScore5); // it works!
+
+
+	// calculate "possible score" integer
+		var questionCountArray = document.getElementsByClassName('question5');
+
+		var questionCounter = 0;
+		for (var i = 0, length = questionCountArray.length; i < length; i++) {
+			questionCounter++;
+		}
+
+	// show score as "score/possible score"
+		var showScore = "You got: " + (calcScore5/questionCounter)*100 +"%";
+	// if 4/4, "perfect score!"
+		if (calcScore5 === questionCounter) {
+			showScore = showScore + "&nbsp; <strong>You got 100% A Perfect Score!</strong>"
+		};
+		document.getElementById('userScore5').innerHTML = showScore;
+	}
+
+$(document).ready(function() {
+
+	$('#submitButton5').click(function() {
+		$(this).addClass('hide');
+	});
+
+});
+
+
+</script> 
+
+</div>	
+
+
+
+
+<!--Table containing all Hiragana elements
+	When you hover over a character a gif will replace it showing the stroke order of that character
+	when you click on a character an audio file will load pronouncing the character-->		
+	
+<table id="myTable" style="width:100%">
+<tr>
+      <td style="text-align:center;">
+        <div id = 'boxed' onclick="play('http://www.guidetojapanese.org/audio/a.mp3')">
+                <span></span>
+                <div class="p">
+					
+						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Japanese_Hiragana_kyokashotai_A.svg/500px-Japanese_Hiragana_kyokashotai_A.svg.png" width="100" height="100" 
+							 onmouseover="this.src='https://upload.wikimedia.org/wikipedia/commons/d/d8/Hiragana_%E3%81%82_stroke_order_animation.gif';"
+							 onmouseout="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Japanese_Hiragana_kyokashotai_A.svg/500px-Japanese_Hiragana_kyokashotai_A.svg.png';">
+						</img><b>a</b>
+					
+                </div>
+            </div>
+		
+
+      </td>
+        <td style="text-align:center;">
+    <div id = 'boxed' onclick="play('http://www.guidetojapanese.org/audio/i.mp3')">
+                <span></span>
+                <div class="p">
+				
+						<img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Japanese_Hiragana_kyokashotai_I.png" width="100" height="100"
+							 onmouseover="this.src='https://upload.wikimedia.org/wikipedia/commons/c/cf/Hiragana_%E3%81%84_stroke_order_animation.gif';"
+							 onmouseout="this.src='https://upload.wikimedia.org/wikipedia/commons/f/fa/Japanese_Hiragana_kyokashotai_I.png';">
+						</img><b>i</b>
+					
+                </div>
+            </div>
+
+
+        </td >
+        <td style="text-align:center;">
+    <div id = 'boxed' onclick="play('http://www.guidetojapanese.org/audio/u.mp3')">
+                <span></span>
+                <div class="p">
+				
+						<img src="https://upload.wikimedia.org/wikipedia/commons/9/90/Japanese_Hiragana_kyokashotai_U.png" width="100" height="100"
+							 onmouseover="this.src='https://upload.wikimedia.org/wikipedia/commons/7/7f/Hiragana_%E3%81%86_stroke_order_animation.gif';"
+							 onmouseout="this.src='https://upload.wikimedia.org/wikipedia/commons/9/90/Japanese_Hiragana_kyokashotai_U.png';">
+						</img><b>u</b>
+					
+                </div>
+            </div>
+
+        </td>
+    <td>
+    <div id = 'boxed' onclick="play('http://www.guidetojapanese.org/audio/e.mp3')">
+                <span></span>
+                <div class="p">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/b/be/Japanese_Hiragana_kyokashotai_E.png" width="100" height="100"
+							 onmouseover="this.src='https://upload.wikimedia.org/wikipedia/commons/4/4f/Hiragana_%E3%81%88_stroke_order_animation.gif';"
+							 onmouseout="this.src='https://upload.wikimedia.org/wikipedia/commons/b/be/Japanese_Hiragana_kyokashotai_E.png';">
+						</img><b>e</b>
+				</div>
+            </div>
+        </td>
+    <td>
+        <div id = 'boxed' onclick="play('http://www.guidetojapanese.org/audio/o.mp3')">
+                <span></span>
+                <div class="p">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Japanese_Hiragana_kyokashotai_O.png" width="100" height="100"
+							 onmouseover="this.src='https://upload.wikimedia.org/wikipedia/commons/7/7b/Hiragana_%E3%81%8A_stroke_order_animation.gif';"
+							 onmouseout="this.src='https://upload.wikimedia.org/wikipedia/commons/3/3b/Japanese_Hiragana_kyokashotai_O.png';">
+						</img><b>o</b>
+				</div>
+            </div>
+        </td>
+<td><div id = 'boxed' onclick="play('http://www.guidetojapanese.org/audio/ka.mp3')">
+            <span></span>
+            <div class="p">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Japanese_Hiragana_kyokashotai_KA.svg/500px-Japanese_Hiragana_kyokashotai_KA.svg.png" width="100" height="100"
+							 onmouseover="this.src='https://upload.wikimedia.org/wikipedia/commons/9/97/Hiragana_%E3%81%8B_stroke_order_animation.gif';"
+							 onmouseout="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Japanese_Hiragana_kyokashotai_KA.svg/500px-Japanese_Hiragana_kyokashotai_KA.svg.png';">
+						</img><b>ka</b>
+				</div>
+        </div></td>
+		
+		<td><div id = 'boxed' onclick="play('http://www.guidetojapanese.org/audio/ki.mp3')">
+            <span></span>
+            <div class="p">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Japanese_Hiragana_kyokashotai_KI.svg/500px-Japanese_Hiragana_kyokashotai_KI.svg.png" width="100" height="100"
+							 onmouseover="this.src='https://upload.wikimedia.org/wikipedia/commons/1/18/Hiragana_%E3%81%8D_stroke_order_animation.gif';"
+							 onmouseout="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Japanese_Hiragana_kyokashotai_KI.svg/500px-Japanese_Hiragana_kyokashotai_KI.svg.png';">
+						</img><b>ki</b>
+				</div>
+        </div></td>
+    <td><div id = 'boxed' onclick="play('http://www.guidetojapanese.org/audio/ku.mp3')">
+            <span></span>
+            <div class="p">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Japanese_Hiragana_kyokashotai_KU.svg/500px-Japanese_Hiragana_kyokashotai_KU.svg.png" width="100" height="100"
+							 onmouseover="this.src='https://upload.wikimedia.org/wikipedia/commons/6/68/Hiragana_%E3%81%8F_stroke_order_animation.gif';"
+							 onmouseout="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Japanese_Hiragana_kyokashotai_KU.svg/500px-Japanese_Hiragana_kyokashotai_KU.svg.png';">
+						</img><b>ku</b>
+				</div>
+        </div></td>
+    <td><div id = 'boxed' onclick="play('http://www.guidetojapanese.org/audio/ke.mp3')">
+            <span></span>
+            <div class="p">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Japanese_Hiragana_kyokashotai_KE.png" width="100" height="100"
+							 onmouseover="this.src='https://upload.wikimedia.org/wikipedia/commons/5/57/Hiragana_%E3%81%91_stroke_order_animation.gif';"
+							 onmouseout="this.src='https://upload.wikimedia.org/wikipedia/commons/4/4d/Japanese_Hiragana_kyokashotai_KE.png';">
+						</img><b>ke</b>
+				</div>
+        </div></td>
+    <td>
+		<div id = 'boxed' onclick="play('http://www.guidetojapanese.org/audio/ko.mp3')"
+            <span></span>
+            <div class="p">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Japanese_Hiragana_kyokashotai_KO.png" width="100" height="100"
+							 onmouseover="this.src='https://upload.wikimedia.org/wikipedia/commons/8/83/Hiragana_%E3%81%93_stroke_order_animation.gif';"
+							 onmouseout="this.src='https://upload.wikimedia.org/wikipedia/commons/f/f3/Japanese_Hiragana_kyokashotai_KO.png';">
+						</img><b>ko</b>
+				</div>
+        </div>
+	</td>
+	<td>
+		<button id="show">Take a Quiz</button>
+
+	</td>
+
+</tr>
+<tr>
+<td><br></td>
+</tr>
+<tr>
+
+
+<td>
+		<div id = 'boxed' onclick="play('http://www.guidetojapanese.org/audio/sa.mp3')">
+            <span></span>
+            <div class="p">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Japanese_Hiragana_kyokashotai_SA.svg/500px-Japanese_Hiragana_kyokashotai_SA.svg.png" width="100" height="100"
+							 onmouseover="this.src='https://upload.wikimedia.org/wikipedia/commons/7/79/Hiragana_%E3%81%95_stroke_order_animation.gif';"
+							 onmouseout="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Japanese_Hiragana_kyokashotai_SA.svg/500px-Japanese_Hiragana_kyokashotai_SA.svg.png';">
+						</img><b>sa</b>
+				</div>
+        </div>
+	</td>
+	<td>
+		<div id = 'boxed' onclick="play('http://www.guidetojapanese.org/audio/shi.mp3')">
+            <span></span>
+            <div class="p">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Japanese_Hiragana_kyokashotai_SI.svg/500px-Japanese_Hiragana_kyokashotai_SI.svg.png" width="100" height="100"
+							 onmouseover="this.src='https://upload.wikimedia.org/wikipedia/commons/a/a4/Hiragana_%E3%81%97_stroke_order_animation.gif';"
+							 onmouseout="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Japanese_Hiragana_kyokashotai_SI.svg/500px-Japanese_Hiragana_kyokashotai_SI.svg.png';">
+						</img><b>shi</b>
+				</div>
+        </div>
+	</td>
+
+	<td>
+		<div id = 'boxed' onclick="play('http://www.guidetojapanese.org/audio/su.mp3')">
+            <span></span>
+            <div class="p">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Japanese_Hiragana_kyokashotai_SU.svg/500px-Japanese_Hiragana_kyokashotai_SU.svg.png" width="100" height="100"
+							 onmouseover="this.src='https://upload.wikimedia.org/wikipedia/commons/0/05/Hiragana_%E3%81%99_stroke_order_animation.gif';"
+							 onmouseout="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Japanese_Hiragana_kyokashotai_SU.svg/500px-Japanese_Hiragana_kyokashotai_SU.svg.png';">
+						</img><b>su</b>
+				</div>
+        </div>
+	</td>
+	
+	<td>
+		<div id = 'boxed' onclick="play('http://www.guidetojapanese.org/audio/se.mp3')">
+            <span></span>
+            <div class="p">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Japanese_Hiragana_kyokashotai_SE.svg/500px-Japanese_Hiragana_kyokashotai_SE.svg.png" width="100" height="100"
+							 onmouseover="this.src='https://upload.wikimedia.org/wikipedia/commons/7/7a/Hiragana_%E3%81%9B_stroke_order_animation.gif';"
+							 onmouseout="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Japanese_Hiragana_kyokashotai_SE.svg/500px-Japanese_Hiragana_kyokashotai_SE.svg.png';">
+						</img><b>se</b>
+				</div>
+        </div>
+	</td>
+	<td>
+		<div id = 'boxed' onclick="play('http://www.guidetojapanese.org/audio/so.mp3')">
+            <span></span>
+            <div class="p">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Japanese_Hiragana_kyokashotai_SO.svg/500px-Japanese_Hiragana_kyokashotai_SO.svg.png" width="100" height="100"
+							 onmouseover="this.src='https://upload.wikimedia.org/wikipedia/commons/5/5b/Hiragana_%E3%81%9D_stroke_order_animation.gif';"
+							 onmouseout="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Japanese_Hiragana_kyokashotai_SO.svg/500px-Japanese_Hiragana_kyokashotai_SO.svg.png';">
+						</img><b>so</b>
+				</div>
+        </div>
+	</td>
+	<td>
+		<div id = 'boxed' onclick="play('http://www.guidetojapanese.org/audio/ta.mp3')">
+            <span></span>
+            <div class="p">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Japanese_Hiragana_kyokashotai_TA.png" width="100" height="100"
+							 onmouseover="this.src='https://upload.wikimedia.org/wikipedia/commons/9/9a/Hiragana_%E3%81%9F_stroke_order_animation.gif';"
+							 onmouseout="this.src='https://upload.wikimedia.org/wikipedia/commons/b/b7/Japanese_Hiragana_kyokashotai_TA.png';">
+						</img><b>ta</b>
+				</div>
+        </div>
+	</td>
+	<td>
+		<div id = 'boxed' onclick="play('http://www.guidetojapanese.org/audio/chi.mp3')">
+            <span></span>
+            <div class="p">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Japanese_Hiragana_kyokashotai_TI.png" width="100" height="100"
+							onmouseover="this.src='https://upload.wikimedia.org/wikipedia/commons/3/32/Hiragana_%E3%81%A1_stroke_order_animation.gif';"
+							 onmouseout="this.src='https://upload.wikimedia.org/wikipedia/commons/a/ad/Japanese_Hiragana_kyokashotai_TI.png';">
+						</img><b>chi</b>
+				</div>
+        </div>
+	</td>
+	<td>
+		<div id = 'boxed' onclick="play('http://www.guidetojapanese.org/audio/tsu.mp3')">
+            <span></span>
+            <div class="p">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Japanese_Hiragana_kyokashotai_TU.png" width="100" height="100"
+							 onmouseover="this.src='https://upload.wikimedia.org/wikipedia/commons/0/08/Hiragana_%E3%81%A4_stroke_order_animation.gif';"
+							 onmouseout="this.src='https://upload.wikimedia.org/wikipedia/commons/c/c9/Japanese_Hiragana_kyokashotai_TU.png';">
+						</img><b>tsu</b>
+				</div>
+        </div>
+	</td>
+		
+	<td>
+		<div id = 'boxed' onclick="play('http://www.guidetojapanese.org/audio/te.mp3')">
+            <span></span>
+            <div class="p">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Japanese_Hiragana_kyokashotai_TE.png" width="100" height="100"
+							 onmouseover="this.src='https://upload.wikimedia.org/wikipedia/commons/1/15/Hiragana_%E3%81%A6_stroke_order_animation.gif';"
+							 onmouseout="this.src='https://upload.wikimedia.org/wikipedia/commons/9/96/Japanese_Hiragana_kyokashotai_TE.png';">
+						</img><b>te</b>
+				</div>
+	   </div>
+	</td>
+		
+	<td>
+		<div id = 'boxed' onclick="play('http://www.guidetojapanese.org/audio/to.mp3')">
+            <span></span>
+            <div class="p">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/0/07/Japanese_Hiragana_kyokashotai_TO.png" width="100" height="100"
+							 onmouseover="this.src='https://upload.wikimedia.org/wikipedia/commons/6/6e/Hiragana_%E3%81%A8_stroke_order_animation.gif';"
+							 onmouseout="this.src='https://upload.wikimedia.org/wikipedia/commons/0/07/Japanese_Hiragana_kyokashotai_TO.png';">
+						</img><b>to</b>
+				</div>
+	    </div>	
+	</td>
+		<td>
+		<button id="show2">Take a Quiz</button>
+
+	</td>
+</tr>
+<tr>
+<td><br></td>
+</tr>
+<tr>
+
+<td>
+	<div id = 'boxed' onclick="play('http://www.guidetojapanese.org/audio/na.mp3')">
+            <span></span>
+            <div class="p">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Japanese_Hiragana_kyokashotai_NA.png" width="100" height="100"
+							 onmouseover="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Hiragana_%E3%81%AA_stroke_order_animation.gif/170px-Hiragana_%E3%81%AA_stroke_order_animation.gif';"
+							 onmouseout="this.src='https://upload.wikimedia.org/wikipedia/commons/7/72/Japanese_Hiragana_kyokashotai_NA.png';">
+						</img><b>na</b>
+				</div>
+        </div>
+</td>
+
+<td>
+	<div id = 'boxed' onclick="play('http://www.guidetojapanese.org/audio/ni.mp3')">
+            <span></span>
+            <div class="p">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/3/37/Japanese_Hiragana_kyokashotai_NI.png" width="100" height="100"
+							 onmouseover="this.src='https://upload.wikimedia.org/wikipedia/commons/2/27/Hiragana_%E3%81%AB_stroke_order_animation.gif';"
+							 onmouseout="this.src='https://upload.wikimedia.org/wikipedia/commons/3/37/Japanese_Hiragana_kyokashotai_NI.png';">
+						</img><b>ni</b>
+				</div>
+        </div>
+</td>
+
+<td>
+	<div id = 'boxed' onclick="play('http://www.guidetojapanese.org/audio/nu.mp3')">
+            <span></span>
+            <div class="p">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Japanese_Hiragana_kyokashotai_NU.png" width="100" height="100"
+							 onmouseover="this.src='https://upload.wikimedia.org/wikipedia/commons/5/5a/Hiragana_%E3%81%AC_stroke_order_animation.gif';"
+							 onmouseout="this.src='https://upload.wikimedia.org/wikipedia/commons/f/fa/Japanese_Hiragana_kyokashotai_NU.png';">
+						</img><b>nu</b>
+				</div>
+        </div>
+</td>
+
+<td>
+	<div id = 'boxed' onclick="play('http://www.guidetojapanese.org/audio/ne.mp3')">
+            <span></span>
+            <div class="p">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Japanese_Hiragana_kyokashotai_NE.png" width="100" height="100"
+							 onmouseover="this.src='https://upload.wikimedia.org/wikipedia/commons/0/0a/Hiragana_%E3%81%AD_stroke_order_animation.gif';"
+							 onmouseout="this.src='https://upload.wikimedia.org/wikipedia/commons/c/c0/Japanese_Hiragana_kyokashotai_NE.png';">
+						</img><b>ne</b>
+				</div>
+        </div>
+</td>
+
+<td>
+	<div id = 'boxed' onclick="play('http://www.guidetojapanese.org/audio/no.mp3')">
+            <span></span>
+            <div class="p">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Japanese_Hiragana_kyokashotai_NO.png" width="100" height="100"
+							 onmouseover="this.src='https://upload.wikimedia.org/wikipedia/commons/0/05/Hiragana_%E3%81%AE_stroke_order_animation.gif';"
+							 onmouseout="this.src='https://upload.wikimedia.org/wikipedia/commons/7/71/Japanese_Hiragana_kyokashotai_NO.png';">
+						</img><b>no</b>
+				</div>
+        </div>
+</td>
+
+<td>
+	<div id = 'boxed' onclick="play('http://www.guidetojapanese.org/audio/ha.mp3')">
+            <span></span>
+            <div class="p">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Japanese_Hiragana_kyokashotai_HA.png" width="100" height="100"
+							 onmouseover="this.src='https://upload.wikimedia.org/wikipedia/commons/4/43/Hiragana_%E3%81%AF_stroke_order_animation.gif';"
+							 onmouseout="this.src='https://upload.wikimedia.org/wikipedia/commons/9/9a/Japanese_Hiragana_kyokashotai_HA.png';">
+						</img><b>ha</b>
+				</div>
+        </div>
+</td>
+
+<td>
+	<div id = 'boxed' onclick="play('http://www.guidetojapanese.org/audio/hi.mp3')">
+            <span></span>
+            <div class="p">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/2/24/%E3%81%B2_%E6%95%99%E7%A7%91%E6%9B%B8%E4%BD%93.png" width="100" height="100"
+							 onmouseover="this.src='https://upload.wikimedia.org/wikipedia/commons/4/40/Hiragana_%E3%81%B2_stroke_order_animation.gif';"
+							 onmouseout="this.src='https://upload.wikimedia.org/wikipedia/commons/2/24/%E3%81%B2_%E6%95%99%E7%A7%91%E6%9B%B8%E4%BD%93.png';">
+						</img><b>hi</b>
+				</div>
+        </div>
+</td>
+
+<td>
+	<div id = 'boxed' onclick="play('http://www.guidetojapanese.org/audio/fu.mp3')">
+            <span></span>
+            <div class="p">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Japanese_Hiragana_kyokashotai_HU.png" width="100" height="100"
+							 onmouseover="this.src='https://upload.wikimedia.org/wikipedia/commons/1/1f/Hiragana_%E3%81%B5_stroke_order_animation.gif';"
+							 onmouseout="this.src='https://upload.wikimedia.org/wikipedia/commons/3/3f/Japanese_Hiragana_kyokashotai_HU.png';">
+						</img><b>fu</b>
+				</div>
+        </div>
+</td>
+
+<td>
+	<div id = 'boxed' onclick="play('http://www.guidetojapanese.org/audio/he.mp3')">
+            <span></span>
+            <div class="p">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/f/fe/Japanese_Hiragana_kyokashotai_HE.png" width="100" height="100"
+							 onmouseover="this.src='https://upload.wikimedia.org/wikipedia/commons/4/40/Hiragana_%E3%81%B8_stroke_order_animation.gif';"
+							 onmouseout="this.src='https://upload.wikimedia.org/wikipedia/commons/f/fe/Japanese_Hiragana_kyokashotai_HE.png';">
+						</img><b>he</b>
+				</div>
+        </div>
+</td>
+
+<td>
+	<div id = 'boxed' onclick="play('http://www.guidetojapanese.org/audio/ho.mp3')">
+            <span></span>
+            <div class="p">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Japanese_Hiragana_kyokashotai_HO.png" width="100" height="100"
+							 onmouseover="this.src='https://upload.wikimedia.org/wikipedia/commons/9/96/Hiragana_%E3%81%BB_stroke_order_animation.gif';"
+							 onmouseout="this.src='https://upload.wikimedia.org/wikipedia/commons/6/6c/Japanese_Hiragana_kyokashotai_HO.png';">
+						</img><b>ho</b>
+				</div>
+        </div>
+</td>
+	<td>
+		<button id="show3">Take a Quiz</button>
+
+	</td>
+
+</tr>
+<tr>
+<td><br></td>
+</tr>
+<tr>
+
+
+
+<td>
+	<div id = 'boxed' onclick="play('http://www.guidetojapanese.org/audio/ma.mp3')">
+            <span></span>
+            <div class="p">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Japanese_Hiragana_kyokashotai_MA.svg/500px-Japanese_Hiragana_kyokashotai_MA.svg.png" width="100" height="100"
+							 onmouseover="this.src='https://upload.wikimedia.org/wikipedia/commons/6/65/Hiragana_%E3%81%BE_stroke_order_animation.gif';"
+							 onmouseout="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Japanese_Hiragana_kyokashotai_MA.svg/500px-Japanese_Hiragana_kyokashotai_MA.svg.png';">
+						</img><b>ma</b>
+				</div>
+        </div>
+</td>
+
+<td>
+	<div id = 'boxed' onclick="play('http://www.guidetojapanese.org/audio/mi.mp3')">
+            <span></span>
+            <div class="p">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Japanese_Hiragana_kyokashotai_MI.png" width="100" height="100"
+							 onmouseover="this.src='https://upload.wikimedia.org/wikipedia/commons/d/d7/Hiragana_%E3%81%BF_stroke_order_animation.gif';"
+							 onmouseout="this.src='https://upload.wikimedia.org/wikipedia/commons/6/60/Japanese_Hiragana_kyokashotai_MI.png';">
+						</img><b>mi</b>
+				</div>
+        </div>
+</td>
+
+<td>
+	<div id = 'boxed' onclick="play('http://www.guidetojapanese.org/audio/mu.mp3')">
+            <span></span>
+            <div class="p">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Japanese_Hiragana_kyokashotai_MU.png" width="100" height="100"
+							 onmouseover="this.src='https://upload.wikimedia.org/wikipedia/commons/1/1f/Hiragana_%E3%82%80_stroke_order_animation.gif';"
+							 onmouseout="this.src='https://upload.wikimedia.org/wikipedia/commons/f/f3/Japanese_Hiragana_kyokashotai_MU.png';">
+						</img><b>mu</b>
+				</div>
+        </div>
+</td>
+
+<td>
+	<div id = 'boxed' onclick="play('http://www.guidetojapanese.org/audio/me.mp3')">
+            <span></span>
+            <div class="p">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Japanese_Hiragana_kyokashotai_ME.png" width="100" height="100"
+							 onmouseover="this.src='https://upload.wikimedia.org/wikipedia/commons/5/58/Hiragana_%E3%82%81_stroke_order_animation.gif';"
+							 onmouseout="this.src='https://upload.wikimedia.org/wikipedia/commons/1/1c/Japanese_Hiragana_kyokashotai_ME.png';">
+						</img><b>me</b>
+				</div>
+        </div>
+</td>
+<td>
+	<div id = 'boxed' onclick="play('http://www.guidetojapanese.org/audio/mo.mp3')">
+            <span></span>
+            <div class="p">
+					
+						<img src="https://upload.wikimedia.org/wikipedia/commons/f/f5/Japanese_Hiragana_kyokashotai_MO.png" width="100" height="100"
+							 onmouseover="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Hiragana_%E3%82%82_stroke_order_animation.gif/170px-Hiragana_%E3%82%82_stroke_order_animation.gif';"
+							 onmouseout="this.src='https://upload.wikimedia.org/wikipedia/commons/f/f5/Japanese_Hiragana_kyokashotai_MO.png';">
+						</img><b>mo</b>
+					
+				</div>
+        </div>
+</td>
+
+<td>
+	<div id = 'boxed' onclick="play('http://www.guidetojapanese.org/audio/ya.mp3')">
+            <span></span>
+            <div class="p">
+					
+						<img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Japanese_Hiragana_kyokashotai_YA.png" width="100" height="100"
+							 onmouseover="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Hiragana_%E3%82%84_stroke_order_animation.gif/170px-Hiragana_%E3%82%84_stroke_order_animation.gif';"
+							 onmouseout="this.src='https://upload.wikimedia.org/wikipedia/commons/a/a6/Japanese_Hiragana_kyokashotai_YA.png';">
+						</img><b>ya</b>
+					
+				</div>
+        </div>
+</td>
+
+<td>
+	<div id = 'boxed' onclick="play('http://www.guidetojapanese.org/audio/yu.mp3')">
+            <span></span>
+            <div class="p">
+					
+						<img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Japanese_Hiragana_kyokashotai_YU.png" width="100" height="100"
+							 onmouseover="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Hiragana_%E3%82%86_stroke_order_animation.gif/170px-Hiragana_%E3%82%86_stroke_order_animation.gif';"
+							 onmouseout="this.src='https://upload.wikimedia.org/wikipedia/commons/c/cc/Japanese_Hiragana_kyokashotai_YU.png';">
+						</img><b>yu</b>
+					
+				</div>
+        </div>
+</td>
+
+<td>
+	<div id = 'boxed' onclick="play('http://www.guidetojapanese.org/audio/yo.mp3')">
+            <span></span>
+            <div class="p">
+					
+						<img src="https://upload.wikimedia.org/wikipedia/commons/1/10/Japanese_Hiragana_kyokashotai_YO.png" width="100" height="100"
+							 onmouseover="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Hiragana_%E3%82%88_stroke_order_animation.gif/170px-Hiragana_%E3%82%88_stroke_order_animation.gif';"
+							 onmouseout="this.src='https://upload.wikimedia.org/wikipedia/commons/1/10/Japanese_Hiragana_kyokashotai_YO.png';">
+						</img><b>yo</b>
+					
+				</div>
+        </div>
+</td>
+
+<td>
+	<div id = 'boxed' onclick="play('http://www.guidetojapanese.org/audio/ra.mp3')">
+            <span></span>
+            <div class="p">
+				
+						<img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Japanese_Hiragana_kyokashotai_RA.png" width="100" height="100"
+							 onmouseover="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Hiragana_%E3%82%89_stroke_order_animation.gif/170px-Hiragana_%E3%82%89_stroke_order_animation.gif';"
+							 onmouseout="this.src='https://upload.wikimedia.org/wikipedia/commons/2/20/Japanese_Hiragana_kyokashotai_RA.png';">
+						</img><b>ra</b>
+					
+				</div>
+        </div>
+</td>
+
+<td>
+	<div id = 'boxed' onclick="play('http://www.guidetojapanese.org/audio/ri.mp3')">
+            <span></span>
+            <div class="p">
+					
+						<img src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Japanese_Hiragana_kyokashotai_RI.png" width="100" height="100"
+							 onmouseover="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Hiragana_%E3%82%8A_stroke_order_animation.gif/170px-Hiragana_%E3%82%8A_stroke_order_animation.gif';"
+							 onmouseout="this.src='https://upload.wikimedia.org/wikipedia/commons/7/7d/Japanese_Hiragana_kyokashotai_RI.png';">
+						</img><b>ri</b>
+				
+				</div>
+        </div>
+</td>
+	<td>
+		<button id="show4">Take a Quiz</button>
+
+	</td>
+
+
+
+</tr><tr>
+<td><br></td>
+</tr><tr>
+
+<tr>
+<td>
+	<div id = 'boxed' onclick="play('http://www.guidetojapanese.org/audio/ru.mp3')">
+        <span></span>
+        <div class="p">
+					
+			<img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Japanese_Hiragana_kyokashotai_RU.png" width="100" height="100"
+				onmouseover="this.src='https://upload.wikimedia.org/wikipedia/commons/2/26/Hiragana_%E3%82%8B_stroke_order_animation.gif';"
+				onmouseout="this.src='https://upload.wikimedia.org/wikipedia/commons/c/c5/Japanese_Hiragana_kyokashotai_RU.png';">
+			</img><b>ru</b>
+					           
+		</div>
+    </div>
+</td>
+<td>
+	<div id = 'boxed' onclick="play('http://www.guidetojapanese.org/audio/re.mp3')">
+        <span></span>
+        <div class="p">
+					
+			<img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Japanese_Hiragana_kyokashotai_RE.png" width="100" height="100"
+				onmouseover="this.src='https://upload.wikimedia.org/wikipedia/commons/6/6c/Hiragana_%E3%82%8C_stroke_order_animation.gif';"
+				onmouseout="this.src='https://upload.wikimedia.org/wikipedia/commons/a/ab/Japanese_Hiragana_kyokashotai_RE.png';">
+			</img><b>re</b>
+					           
+		</div>
+    </div>
+</td>
+
+<td>
+	<div id = 'boxed' onclick="play('http://www.guidetojapanese.org/audio/ro.mp3')">
+        <span></span>
+        <div class="p">
+					
+			<img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Japanese_Hiragana_kyokashotai_RO.png" width="100" height="100"
+				onmouseover="this.src='https://upload.wikimedia.org/wikipedia/commons/3/35/Hiragana_%E3%82%8D_stroke_order_animation.gif';"
+				onmouseout="this.src='https://upload.wikimedia.org/wikipedia/commons/7/70/Japanese_Hiragana_kyokashotai_RO.png';">
+			</img><b>ro</b>
+					           
+		</div>
+    </div>
+</td>
+
+<td>
+	<div id = 'boxed' onclick="play('http://www.guidetojapanese.org/audio/wa.mp3')">
+        <span></span>
+        <div class="p">
+					
+			<img src="https://upload.wikimedia.org/wikipedia/commons/0/01/Japanese_Hiragana_kyokashotai_WA.png" width="100" height="100"
+				onmouseover="this.src='https://upload.wikimedia.org/wikipedia/commons/6/6a/Hiragana_%E3%82%8F_stroke_order_animation.gif';"
+				onmouseout="this.src='https://upload.wikimedia.org/wikipedia/commons/0/01/Japanese_Hiragana_kyokashotai_WA.png';">
+			</img><b>wa</b>
+					           
+		</div>
+    </div>
+</td>
+
+<td>
+	<div id = 'boxed' onclick="play('http://www.guidetojapanese.org/audio/wo.mp3')">
+        <span></span>
+        <div class="p">
+					
+			<img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Japanese_Hiragana_kyokashotai_WO.png" width="100" height="100"
+				onmouseover="this.src='https://upload.wikimedia.org/wikipedia/commons/6/64/Hiragana_%E3%82%92_stroke_order_animation.gif';"
+				onmouseout="this.src='https://upload.wikimedia.org/wikipedia/commons/b/b7/Japanese_Hiragana_kyokashotai_WO.png';">
+			</img><b>wo</b>
+					           
+		</div>
+    </div>
+</td>
+<td>
+	<div id = 'boxed' onclick="play('http://www.guidetojapanese.org/audio/n.mp3')">
+        <span></span>
+        <div class="p">
+					
+			<img src="https://upload.wikimedia.org/wikipedia/commons/7/77/Japanese_Hiragana_kyokashotai_N.png" width="100" height="100"
+				onmouseover="this.src='https://upload.wikimedia.org/wikipedia/commons/f/f6/Hiragana_%E3%82%93_stroke_order_animation.gif';"
+				onmouseout="this.src='https://upload.wikimedia.org/wikipedia/commons/7/77/Japanese_Hiragana_kyokashotai_N.png';">
+			</img><b>n</b>
+					           
+		</div>
+    </div>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+	<td>
+		<button id="show5">Take a Quiz</button>
+
+	</td>
+</tr>
+
+
+        
+
+        
+
+        
+
+
+
+
+
+</body>
+</html>
+
+          
+        
+    </body>
+
+<script>
+
+//Function to play audio link
+function play(lnk){
+
+	var snd = new Audio(lnk);
+	snd.play();
+
+}
+
+
+
+
+
+
+</script>
+</html>
